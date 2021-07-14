@@ -1,0 +1,111 @@
+.bg-img{
+    background-image: url('../pic/home-state-of-the-child.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .otherimg{
+    background-image: url('../pic/DSC_2742.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+
+  }
+  #history-section {
+    background-color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td.title {
+    width: 20.5%;
+    color: #858585;
+    border-right: 1px solid #9F9F9F;
+    position: relative;
+    vertical-align: top;
+  }
+  td.title h1 {
+    font-size: 44px;
+    padding-right: 25%;
+    /* position: absolute; */
+    top: 20px;
+  }
+  .info {
+    font-weight: bold;
+    font-size: 16px;
+    color: #707070;
+    margin-top: 2em;
+  }
+.info p {
+  font-weight: normal;
+}
+  td.title a:link {
+    font-weight: normal;
+    color: #707070;
+}
+td.title a {
+  text-decoration: none;
+  color: #858585;
+}
+td.title a:hover {
+  opacity: 50%;
+}
+  td.content {
+  color: black;
+  font-size: 20px;
+  }
+  td.content article {
+    padding-left: 6.5%;
+  }
+  td.content article p.soon-2020 { font-style: italic; }
+  #history-section table.reports { margin-left: 50px; }
+  #history-section div.title-ipad-container { display: none; }
+  #history-section .reports-mobile { display: none; }
+  figure {
+    /* border: 1px #cccccc solid; */
+    padding: 4px;
+    padding-bottom: 0%;
+    margin-left: 0;
+    margin-right: 20px;
+    text-align: center;
+  }
+  figure a{
+      text-decoration: none;
+  }
+
+  figcaption {
+    font-size: 80%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding-top: 0px;
+    text-align: center;
+  }
+
+@media (max-width: 1024px) {
+  td.title {
+    display: none;
+  }
+  #history-section div.title-ipad-container { display: block; text-align: center; }
+  h1.title-ipad { text-align: center; font-size: 2rem; color: #1FB4E8; margin-bottom: 0.8rem; }
+  div.title-underline { width: 15rem; margin: 0 auto; border-top: 2px solid #1fb4e8; }
+  div.title-ipad-container p a { text-decoration: none; color: #858585; }
+  div.title-ipad-container p a:hover { opacity: 80%; }
+}
+@media (max-width: 768px) {
+  table { width: 100%; }
+  td.content article { padding: 0 4%; }
+  #history-section table.reports { display: none; }
+  #history-section .reports-mobile { display: block; display: flex; flex-wrap: wrap; justify-content: center; }
+}

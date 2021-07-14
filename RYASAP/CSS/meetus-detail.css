@@ -1,0 +1,238 @@
+
+
+body {
+  font-family: Arial;
+}
+a {
+  text-decoration: none;
+}
+
+.bg-img{
+  background-image: url('../pic/meetus.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+section {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+section:nth-of-type(even) {
+  background-color: #F2F0EC;
+}
+.meetus-summary h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #E3C227;
+}
+.meetus-summary table {
+  width: 100%;
+  margin-bottom: 2%;
+}
+.meetus-summary table td {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 175%;
+}
+
+.meetus-summary table td a, .meetus-summary .program-links a {
+  text-decoration: underline;
+  color: #858585;
+}
+.meetus-summary table td span {
+  color: #858585;
+  text-decoration: none;
+}
+.meetus-summary .program-links {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  display: none;
+}
+.meetus-summary .program-links li {
+  color: #858585;
+}
+.meetus-summary .program-links a {
+  display: block;
+  line-height: 175%;
+}
+.meetus-summary div.logo-area {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.meetus-summary div.logo-area img {
+  opacity: 15%;
+}
+
+.meetus-detail h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #E3C227;
+  text-align: center;
+  /* border-bottom: 1px solid #E3C227; */
+}
+.meetus-detail hr {
+  width: 57%;
+  margin-bottom: 7.5%;
+  /* color: #E3C227;
+  border-color: #E3C227; */
+}
+.meetus-detail .list-ppl {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-flow: wrap;
+}
+.meetus-detail .list-ppl .card {
+  width: calc(25% - 32px);
+  border: 0.5px solid #707070;
+  border-radius: 5px;
+  padding-bottom: 60px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 7%;
+  background-color: white;
+  position: relative;
+}
+.meetus-detail .list-ppl .card .card-upper {
+  background-color: #1FB4E8;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  border-radius: 4px 4px 0 0;
+}
+.meetus-detail .list-ppl .card .card-upper img {
+  border-radius: 100%;
+  border: 1px solid #707070;
+}
+.img-frame-1-1 {
+  width: 50%;
+  padding-top: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-with-ratio-1-1 {
+  position: absolute;
+  top: 0; left: 0;
+  width: 99%; height: 98%;
+  object-fit: cover;
+}
+.meetus-detail .list-ppl .card h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  margin-bottom: 0.6em;
+}
+.meetus-detail .list-ppl .card p {
+  color: #686868;
+  font-weight: 500;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+}
+.meetus-detail .list-ppl .card p.position {
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-bottom: 1.5em;
+  margin-top: 0.6em;
+}
+.meetus-detail .list-ppl .card p.mail {
+  text-decoration: underline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.meetus-detail .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1FB4E8;
+  color: white;
+  font-weight: bold;
+  width: 62%;
+  border-radius: 5px;
+  padding: 8px 5px;
+  text-align: center;
+  position: absolute;
+  left: 19%;
+  bottom: 20px;
+  font-size: 1rem;
+}
+section .section-wrapper {
+  position: relative;
+}
+.meetus-detail a.to-top {
+  position: absolute;
+  right: 0; bottom: 0;
+  color: #686868;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 50%;
+}
+.meetus-detail .list-ppl .card p.mail:hover {
+  opacity: 50%;
+}
+.meetus-detail .button:hover {
+  opacity: 50%;
+}
+
+
+/* styles for tablet-horizontal */
+@media only screen and (max-width: 1024px) {
+  .meetus-detail .list-ppl .card {
+    width: calc(33% - 32px);
+  }
+  .meetus-summary table td {
+    font-size: 1.3rem;
+  }
+}
+
+/* styles for tablet-vertical */
+@media (max-width: 768px) {
+  /* html {
+    font-size: 12px;
+  } */
+}
+
+/* styles for smartphone devices */
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+  .bg-img {
+    height: 400px;
+  }
+  .meetus-summary table {
+    display: none;
+  }
+  .meetus-summary .program-links {
+    display: block;
+  }
+  .section-wrapper {
+    padding-bottom: 10px;
+  }
+  .meetus-detail h1 {
+    font-size: 2rem;
+  }
+  .meetus-detail .list-ppl .card {
+    width: calc(100% - 32px);
+  }
+}

@@ -1,0 +1,131 @@
+.bg-img {
+  background-image: url('../pic/donate.png');
+  background-position: center;
+  background-size: cover;
+  /* height: 700px; */
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.spaceholder-mobile {
+display: none;
+}
+.button-to-paypal{
+margin-top: 6em;
+margin-left: 20em;
+width: 12%;
+padding: 20px;
+background-color: #1fb4e8 ;
+border-radius: 10px;
+float: left;
+box-sizing: border-box;
+text-align: center;
+top: 40%;
+}
+
+.button-to-paypal:hover{
+margin-top: 6em;
+margin-left: 20em;
+width: 12%;
+padding: 20px;
+background-color: #fed208 ;
+border-radius: 10px;
+float: left;
+box-sizing: border-box;
+text-align: center;
+top: 40%;
+}
+
+.button-to-paypal-ipad {
+display: none;
+}
+.button-to-paypal a, .button-to-paypal-ipad a {
+  color: #f2f0ec;
+  text-align: right;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.button-to-paypal a:hover, .button-to-paypal-ipad a:hover {
+  color: black;
+}
+
+.head-bg-img-history {
+  width: 40%;
+  margin-left: 45%;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(56, 47, 47, 0.329);
+  color: white;
+}
+
+article {
+  padding: 0.5em 1em;
+  display: block;
+  line-height: 20px;
+  text-align: justify;
+}
+main {
+display: none;
+}
+
+/* styles for tablet-horizontal */
+@media only screen and (max-width: 1024px) {
+  .button-to-paypal {
+    margin-left: 12em;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+.button-to-paypal {
+  display: none;
+}
+.button-to-paypal-ipad {
+  display: inline-block;
+  width: auto;
+  padding: 20px;
+  background-color: #1fb4e8 ;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.bg-img {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.head-bg-img-history {
+  width: 65%;
+  margin: 0 auto 50px;
+}
+}
+
+/* styles for smartphone devices */
+@media only screen and (max-width: 480px) {
+.spaceholder-mobile {
+  height: 100%;
+}
+.bg-img {
+  padding: 0;
+  height: 300px;
+}
+.bg-img .head-bg-img-history, .bg-img .button-to-paypal-ipad {
+  display: none;
+}
+main {
+  display: block;
+  text-align: center;
+}
+main article {
+  width: 90%
+}
+.button-to-paypal-ipad {
+  margin-bottom: 20px;
+}
+.button-to-paypal-ipad a {
+  font-size: 20px;
+}
+}

@@ -1,0 +1,132 @@
+.bg-img{
+  background-image: url('../pic/home-state-of-the-child.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#info-section {
+  background-color: white;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+td.title {
+  width: 20.5%;
+  color: #858585;
+  border-right: 1px solid #9F9F9F;
+  position: relative;
+  vertical-align: top;
+}
+td.title h1 {
+  font-size: 2.5rem;
+  padding-right: 25%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+
+}
+.info {
+    font-weight: bold;
+    color: #707070;
+    margin-top: 2em;
+
+}
+td.title a:link {
+    font-weight: normal;
+    color: #707070;
+}
+td.title a {
+  text-decoration: none;
+  color: #858585;
+}
+td.title a:hover {
+  opacity: 50%;
+}
+td.content {
+  color: black;
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+}
+td.content article {
+  padding-left: 6.5%;
+}
+
+td.content article a:hover{
+  opacity: 50%;
+}
+
+.left-image img {
+    /* border-radius: 50%; */
+    object-fit: contain;
+    margin-right: 1em;
+  }
+.left-image {
+    float: left;
+    margin-left: 1.5em;
+    border-radius: 50%;
+}
+div.table-alternate {
+  display: none;
+}
+.other-logos { text-align: center; }
+
+/* styles for tablet-horizontal */
+@media only screen and (max-width: 1024px) {
+  td.title {
+    width: 25%;
+  }
+  td.title h1 {
+    font-size: 2rem;
+  }
+  .info {
+    word-break: break-all;
+  }
+  td.content {
+    font-size: 1.25rem;
+  }
+}
+
+/* styles for tablet-vertical */
+@media (max-width: 768px) {
+  div.table-alternate {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table {
+    display: none;
+  }
+  #info-section {
+    padding-top: 3em;
+  }
+  .table-alternate h1 {
+    text-align: center;
+  }
+  .table-alternate a {
+      font-weight: normal;
+      color: #707070;
+  }
+  .other-logos {
+    margin-top: 30px;
+  }
+}
+
+/* styles for smartphone devices */
+@media (max-width: 480px) {
+  .bg-img {
+    height: 400px;
+  }
+  .left-image {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+  .left-image img { margin: 0; }
+}

@@ -1,0 +1,121 @@
+header{
+  height: 20%;
+  background-color: #fed208;
+  text-align: center;
+  padding-top: 2%;
+}
+.button-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1FB4E8;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 8px 5px;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  /* border: black solid; */
+}
+    h1 {
+          font-size: 34px;
+          font-family: Arial, Verdana, sans-serif;
+}
+.profile{
+  display: inline-flex;
+  width: 70%;
+  /* border: solid black ; */
+  margin-left: 15% ;
+  margin-right: 15%;
+  padding-top: 6em;
+}
+.info{
+  width: 33%;
+  /* border: solid black ; */
+}
+.info img{
+  padding-left: 0;
+  margin-left: 0;
+}
+.content p{
+  color: rgb(155, 141, 141);
+  font-weight: 700;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.content a p:hover{
+  opacity: 50%;
+}
+.content h3 {
+  font-size: 20px;
+}
+.description{
+  font-size: 20px;
+  width: 66%;
+  /* border: solid black ; */
+}
+.description-down {
+  display: none;
+}
+.description p{
+  margin-top: 0;
+  margin-left: 5em;
+}
+/* .link{
+  display: inline;
+} */
+.next{
+  text-align: right;
+  /* display: inline; */
+  /* position: relative; */
+  /* max-width: 10%; */
+  padding-bottom: 10%;
+  margin-right: 15%;
+  /* border: black solid; */
+}
+.arrowright {
+  border: solid ;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.next a:link , .next a:visited{
+  color: #e9bf06;
+}
+.next a:hover{
+  color: #1FB4E8;
+}
+@media (max-width: 1024px) {
+  .profile { display: block; }
+  .info { text-align: center; width: auto; margin-bottom: 50px; }
+  .info .content > p { display:  none; }
+  .description { width: auto; }
+  .description p { margin: 0; }
+  .button { padding: 8px; }
+}
+@media (max-width: 768px) {
+  .button {
+    padding: 0;
+  }
+  /* .info {
+    margin-left: 120px;
+  } */
+  /* .description {
+    display: none;
+  } */
+  /* .description-down {
+    display: block;
+    width: 70%;
+    margin: auto;
+  } */
+}
+@media (max-width: 480px) {
+  .info {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,22 @@
+#info-section a{
+  text-decoration: none;
+  
+}
+.content a:link{
+  color: rgba(67, 67, 245, 0.89)
+}
+.content a:hover{
+  color: rgb(240, 236, 29)
+}
+
+.content {
+  padding-bottom: 4em;
+}
+.buttonright{
+  background-color:#fed208;
+  color: #27a6f0;
+}
+.buttonleft{
+  background-color:#fed208;
+  color: #27a6f0;
+}
